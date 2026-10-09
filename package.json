@@ -1,0 +1,50 @@
+{
+  "name": "meiliot-mcp",
+  "version": "1.0.0",
+  "description": "Meiliot MCP server (stdio) — tools call Public API /api/v1 with Bearer token",
+  "type": "module",
+  "bin": {
+    "meiliot-mcp": "./dist/index.js"
+  },
+  "main": "./dist/index.js",
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "prepare": "npm run build",
+    "start": "node dist/index.js",
+    "dev": "tsx src/index.ts"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "keywords": [
+    "meiliot",
+    "mcp",
+    "model-context-protocol",
+    "cursor",
+    "email",
+    "api"
+  ],
+  "author": "Meiliot",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vjdqvjh/meiliot-mcp.git"
+  },
+  "bugs": {
+    "url": "https://github.com/vjdqvjh/meiliot-mcp/issues"
+  },
+  "homepage": "https://github.com/vjdqvjh/meiliot-mcp#readme",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.12.1",
+    "@types/node": "^22.10.0",
+    "typescript": "^5.7.2"
+  },
+  "devDependencies": {
+    "tsx": "^4.19.2"
+  }
+}
